@@ -3,10 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Welcome</h1>
-    <p>This is a basic HTML page.</p>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Dev<span>Port.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Your Name</h1>
+            <h3>And I'm a <span class="typing-text"></span></h3>
+            <p>I build clean, beautiful, and user-friendly web experiences.</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Hello! I am a passionate developer who loves turning complex problems into simple, beautiful interface designs. I specialize in HTML5, CSS3, JavaScript, and modern front-end frameworks.</p>
+                <div class="skills">
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A fully responsive online store with a functional shopping cart and smooth animations.</p>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Weather Application</h3>
+                    <p>A sleek weather app that fetches real-time data from a third-party API based on location.</p>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Task Manager</h3>
+                    <p>A productivity application featuring local storage persistence and drag-and-drop mechanics.</p>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
