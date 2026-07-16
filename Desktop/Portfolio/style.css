@@ -163,7 +163,7 @@ section {
 }
 
 .project-card {
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: 1rem;
     overflow: hidden;
     padding: 2.5rem;
