@@ -250,8 +250,14 @@ footer {
     .contact form .input-box input {
         width: 100%;
     }
-    
-    .nav-links {
-        display: none; /* Simple workaround for mobile; can be expanded with a JS toggle burger menu */
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
     }
-}
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+} 
+    
+    
