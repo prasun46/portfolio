@@ -1,4 +1,32 @@
 /* Global Reset & Base Styles */
+/* Interactive Fullscreen Canvas Background */
+#physics-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; /* Places it behind your content */
+    pointer-events: all; /* Allows mouse tracking */
+}
+
+/* Ensure all other layout sections sit clearly above the canvas background */
+.navbar, section, footer {
+    position: relative;
+    z-index: 1; /* Pushes content forward so it is readable and clickable */
+}
+
+/* Make backgrounds slightly translucent to reveal the interactive particles floating behind them */
+body {
+    background: #0f1115; /* Deeper base dark */
+}
+.hero {
+    background: transparent;
+}
+.about, .services, .projects, .contact {
+    background: rgba(31, 36, 45, 0.75) !important; /* Semi-transparent dark slate */
+    backdrop-filter: blur(8px); /* Stunning glassmorphism effect */
+}
 * {
     margin: 0;
     padding: 0;
